@@ -6,7 +6,7 @@ function Header() {
     <div className='bg-[#2699fb] p-4'>
         <div className="max-w-[1240] py-2 flex justify-between items-center mx-auto">
             <div className='text-2xl font-bold'>
-                Ansh Varma
+                Ansh Varm
             </div>
             <AiOutlineAlignRight className='block md:hidden xl:hidden'/>
             <ul className='hidden md:flex text-white gap-12'>
