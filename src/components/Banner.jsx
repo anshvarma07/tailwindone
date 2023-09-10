@@ -11,7 +11,7 @@ export default function Banner() {
             {/* <Typed strings={[' Hello Nigga!',' Hello Paaji!']} typeSpeed={60} backSpeed={90} loop/> */}
             Hello Paaji!
             </div>
-            <button type="button" className='p-[4px] my-6 border border-black rounded-md bg-black text-white w-40'>Get Started</button>
+            <button type="button" className='hover:bg-black/80 p-[4px] my-6 border border-black rounded-md bg-black text-white w-40'>Get Started</button>
         </div>
       
     </div>
