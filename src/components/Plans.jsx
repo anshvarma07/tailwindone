@@ -12,13 +12,13 @@ export default function Plans() {
                 <button type="button" className='bg-[#00df9a] p-[10px] rounded-lg w-[70%] duration-500 my-8 hover:bg-black hover:text-white'>Start Trial</button>
             </div>
             <div className="shadow-2xl hover:scale-[1.05] duration-300 rounded-xl text-center">
-                <h4 className='font-bold my-12 text-2xl'>Video Editing</h4>
+                <h4 className='font-bold my-12 text-2xl md:pt-0 pt-12'>Video Editing</h4>
                 <h4 className='font-bold my-12 text-4xl'>$109.99</h4>
                 <p className='px-[5px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente praesentium dolore accusantium rem impedit illum commodi ab! Aspernatur, odio!</p>
                 <button type="button" className='bg-[#00df9a] p-[10px] rounded-lg w-[70%] duration-500 my-8 hover:bg-black hover:text-white'>Start Trial</button>
             </div>
             <div className="shadow-2xl hover:scale-[1.05] duration-300 rounded-xl text-center">
-                <h4 className='font-bold my-12 text-2xl'>Web Development</h4>
+                <h4 className='font-bold my-12 text-2xl md:pt-0 pt-12'>Web Development</h4>
                 <h4 className='font-bold my-12 text-4xl'>$129.99</h4>
                 <p className='px-[5px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente praesentium dolore accusantium rem impedit illum commodi ab! Aspernatur, odio!</p>
                 <button type="button" className='bg-[#00df9a] p-[10px] rounded-lg w-[70%] duration-500 my-8 hover:bg-black hover:text-white'>Start Trial</button>
