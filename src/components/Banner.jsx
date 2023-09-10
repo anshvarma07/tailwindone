@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Banner() {
   return (
-    <div className='bg-[#2699fb] h-full py-[150px] text-bold w-full text-center'>
+    <div className='bg-[#2699fb] h-full py-[150px] font-bold w-full text-center'>
         <div >
             <div className='md:text-4xl  text-3xl'>Learn with us.</div>
             <div className='text-white md:text-7xl text-5xl'>Grow with us.</div>
