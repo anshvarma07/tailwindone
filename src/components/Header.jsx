@@ -5,7 +5,7 @@ function Header() {
     const [Toggle,setToggle]=useState(false);
   return (
     <div className='bg-[#2699fb] p-4'>
-        <div className="max-w-[1240] py-2 flex justify-between items-center mx-auto">
+        <div className="max-w-[1240px] py-2 flex justify-between items-center mx-auto">
             <div className='text-2xl font-bold text-white'>
                 Ansh Varma
             </div>
