@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import { AiOutlineAlignRight ,AiOutlineClose} from 'react-icons/ai';
+import img2 from '../Assets/logo.jpeg'
+
 
 function Header() {
     const [Toggle,setToggle]=useState(false);
   return (
-    <div className='bg-[#2699fb] p-4'>
+    <div className='bg-[#235951] p-4'>
         <div className="max-w-[1240px] py-2 flex justify-between items-center mx-auto">
-            <div className='text-2xl font-bold text-white'>
-                Ansh Varma
+            <div className='text-2xl font-bold text-white w-[40%] md:w-[18%]'>
+                <a href="/"><img src={img2} alt="" srcset="" /></a>
             </div>
             {Toggle?<AiOutlineClose onClick={()=>setToggle(!Toggle)} className='block md:hidden xl:hidden text-white text-2xl'/>:<AiOutlineAlignRight onClick={()=>setToggle(!Toggle)} className='block md:hidden xl:hidden text-white text-2xl'/>}
             

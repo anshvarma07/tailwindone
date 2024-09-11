@@ -3,14 +3,21 @@ import img1 from '../Assets/6.png'
 
 export default function Experts() {
   return (
-    <div className='max-w-[1240px] max-auto  md:grid grid-cols-3 mx-auto'>
-        <div className="col-span-2 md:p-10 py-10 pl-5 pr-2 flex flex-col justify-center">
-            <h1 className='text-[#00df9a] font-bold md:text-xl'>LEARN FROM EXPERTS</h1>
-            <p className='my-1 md:text-base text-[13px]'>Aorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus veritatis sint quos numquam, aut ab modi quo incidunt necessitatibus sequi fuga totam laborum quasi asperiores sed quas porro unde doloribus. Veniam, molestiae quas. Illum numquam tenetur reprehenderit.</p>
-            <button type="button" className='p-[4px] my-1 rounded-md bg-black text-white w-40 font-bold hover:bg-black/80'>Get Started</button>
-        </div>
-        <div className="col-span-1"><img className='p-12' src={img1} alt=""/></div>
-
+<div className="max-w-[1240px] mx-auto md:grid grid-cols-3 gap-4">
+    <div className="col-span-2 md:p-20 py-10 pl-5 pr-2 flex flex-col justify-center">
+        <h1 className="text-[gold] font-bold text-2xl md:text-3xl">
+            A leading full service Intellectual Property law firm.
+        </h1>
+        <p className="my-1 md:text-base text-[13px]">
+            A professionally managed law firm, S.S. Advocates is regularly engaged for thoughtful and reliable IP solutions by its clients. The firm balances commercial realities with legal pragmatism.
+        </p>
+        <button type="button" className="p-[4px] my-1 rounded-md bg-black text-white w-40 font-bold hover:bg-black/80">
+            Get Started
+        </button>
     </div>
+    <div className="col-span-1 flex items-center justify-center">
+        <img className="h-[60vh] max-w-full object-contain" src={img1} alt=""/>
+    </div>
+</div>
   )
 }
