@@ -7,7 +7,7 @@ import Services from "./Pages/Services";
 
 
 function App() {
-  return <div className="App bg-[#6A9C89]">
+  return <div className="App bg-[#00DF9A]">
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>

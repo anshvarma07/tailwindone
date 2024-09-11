@@ -106,7 +106,7 @@ const ServicesPage = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-[#235951] to-[#6A9C89]  text-white pb-8">
+        <div className="min-h-screen bg-gradient-to-b from-[#235951] to-[#00DF9A]  text-white pb-8">
             <div className=" p-8 px-5 text-center">
                 <h1 className="mb-4 text-5xl font-extrabold leading-tight text-white md:text-6xl lg:text-7xl">
                     <span className="bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-600 text-[gold]">

@@ -11,7 +11,7 @@ import img7 from "../Assets/206.webp";
 
 export default function Plans() {
     return (
-        <div className=' pt-[70px]'>
+        <div className=' pt-[70px] bg-gradient-to-b from-[#235951] to-[#00DF9A]'>
             <h1 className='text-center text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-yellow-500 to-amber-500 mb-2 drop-shadow-lg'>
                 Services We Offer
             </h1>
