@@ -1,17 +1,19 @@
 import "./App.css";
-import Banner from "./components/Banner";
-import Header from "./components/Header";
-import Experts from "./components/Experts";
-import Newsletter from './components/Newsletter'
-import Plans from "./components/Plans";
+// import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Services from "./Pages/Services";
+
+
 
 function App() {
-  return <div className="App">
-    <Header />
-    <Banner />
-    <Experts />
-    <Newsletter />
-    <Plans />
+  return <div className="App bg-[#6A9C89]">
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/services" element={<Services />} />
+      </Routes>
+    </BrowserRouter>
   </div>;
 }
 

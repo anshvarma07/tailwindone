@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import img2 from '../Assets/139.png';
-import img3 from '../Assets/140.png';
-import img4 from '../Assets/141.png';
-import img5 from '../Assets/142.png';
+import img2 from '../Assets/139.jpg';
+import img3 from '../Assets/140.jpg';
+import img4 from '../Assets/141.jpg';
+import img5 from '../Assets/142.jpg';
 
 const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -41,32 +41,30 @@ const Banner = () => {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <div 
-            className="absolute inset-0 bg-cover bg-center opacity-[15%]"
-            style={{
-              backgroundImage: `url(${slide.img})`,
-              backgroundSize: 'contain',  // Ensures the image is fully visible
-              backgroundRepeat: 'no-repeat',  // Prevents tiling
-              backgroundPosition: 'center',  // Centers the image
-              height: '120%',  // Optional: ensures it stretches fully within the div
-              width: '100%'    // Optional: ensures it stretches fully within the div
-            }}
-          ></div>
-          <div className="relative h-full flex flex-col items-center justify-center z-10">
-            <h2 className="text-[gold] text-4xl md:text-6xl font-bold mb-4 text-center">
-              {slide.title}
-            </h2>
-            <p className="text-white text-2xl md:text-4xl font-semibold mb-8 text-center">
-              {slide.subtitle}
-            </p>
-            <button className="bg-white text-[#235951] font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300">
-              Get Started
-            </button>
+          <div className="flex h-full">
+            <div className="w-1/2 flex flex-col items-start justify-center p-12">
+              <h2 className="text-[gold] text-4xl md:text-6xl font-bold mb-4">
+                {slide.title}
+              </h2>
+              <p className="text-white text-2xl md:text-4xl font-semibold mb-8">
+                {slide.subtitle}
+              </p>
+              <button className="bg-white text-[#235951] font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300">
+                Get Started
+              </button>
+            </div>
+            <div className="w-1/2 relative">
+              <img
+                src={slide.img}
+                alt={slide.title}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       ))}
 
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+      <div className="absolute bottom-5 left-1/4 transform -translate-x-1/2 flex space-x-2 z-20">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -82,16 +80,16 @@ const Banner = () => {
         onClick={goToPrevSlide}
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/30 p-2 rounded-full hover:bg-white/50 transition duration-300 z-20"
       >
-        &#8249;
+        {/* <ChevronLeft size={24} /> */}
       </button>
 
       <button
         onClick={goToNextSlide}
         className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/30 p-2 rounded-full hover:bg-white/50 transition duration-300 z-20"
       >
-        &#8250;
-      </button>
-    </div>
+        {/* <ChevronRight size={24} /> */}
+      </button> 
+      </div>
   );
 };
 
