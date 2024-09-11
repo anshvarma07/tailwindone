@@ -11,7 +11,7 @@ import img7 from "../Assets/206.webp";
 
 export default function Plans() {
     return (
-        <div className=' pt-[70px] bg-gradient-to-b from-[#235951] to-[#00DF9A]'>
+        <div className=' pt-[70px] bg-gradient-to-b from-[#235951] to-[#3F6D66]'>
             <h1 className='text-center text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-yellow-500 to-amber-500 mb-2 drop-shadow-lg'>
                 Services We Offer
             </h1>
@@ -48,7 +48,7 @@ export default function Plans() {
                     <p className='text-gray-600 mb-6 px-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente praesentium dolore accusantium rem impedit illum commodi ab! Aspernatur, odio!
                     </p>
-                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg text-sm font-bold text-[#235951] rounded-md text-black mt-5'>
+                    <button type="button" className='bg-[black] text-white px-[20px] py-[10px] text-lg text-sm font-bold text-[#235951] rounded-md text-black mt-5'>
                         KNOW MORE
                     </button>
                 </div>
@@ -60,7 +60,7 @@ export default function Plans() {
                     <p className='text-gray-600 mb-6 px-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente praesentium dolore accusantium rem impedit illum commodi ab! Aspernatur, odio!
                     </p>
-                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg text-sm font-bold text-[#235951] rounded-md text-black mt-5'>
+                    <button type="button" className='bg-[black] text-white px-[20px] py-[10px] text-lg text-sm font-bold text-[#235951] rounded-md text-black mt-5'>
                         KNOW MORE
                     </button>
                 </div>
@@ -72,7 +72,7 @@ export default function Plans() {
                     <p className='text-gray-600 mb-6 px-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente praesentium dolore accusantium rem impedit illum commodi ab! Aspernatur, odio!
                     </p>
-                    <button type="button" className='bg-[#00DF9A] px-[20px] text-sm py-[10px] text-lg  text-[#235951] rounded-md text-black mt-5'>
+                    <button type="button" className='bg-[black] text-white px-[20px] text-sm py-[10px] text-lg  text-[#235951] rounded-md text-black mt-5'>
                         KNOW MORE
                     </button>
                 </div>
@@ -84,7 +84,7 @@ export default function Plans() {
                     <p className='text-gray-600 mb-6 px-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente praesentium dolore accusantium rem impedit illum commodi ab! Aspernatur, odio!
                     </p>
-                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg text-sm text-[#235951] rounded-md text-black mt-5'>
+                    <button type="button" className='bg-[black] text-white px-[20px] py-[10px] text-lg text-sm text-[#235951] rounded-md text-black mt-5'>
                         KNOW MORE
                     </button>
                 </div>
@@ -96,7 +96,7 @@ export default function Plans() {
                     <p className='text-gray-600 mb-6 px-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente praesentium dolore accusantium rem impedit illum commodi ab! Aspernatur, odio!
                     </p>
-                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg text-sm  text-[#235951] rounded-md text-black mt-5'>
+                    <button type="button" className='bg-[black] text-white px-[20px] py-[10px] text-lg text-sm  text-[#235951] rounded-md text-black mt-5'>
                         KNOW MORE
                     </button>
                 </div>

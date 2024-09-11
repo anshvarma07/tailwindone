@@ -3,7 +3,7 @@ import React from 'react';
 export default function Newsletter() {
   return (
     <div className='bg-[#235951]'>
-        <div className='bg-gradient-to-b from-[#00DF9A] to-[#235951] mx-auto md:grid grid-cols-2 gap-4 p-6'>
+        <div className='bg-gradient-to-b from-[#3F6D66] to-[#235951] mx-auto md:grid grid-cols-2 gap-4 p-6'>
             <div className="text-lg md:pl-8 pl-6 col-span-1 text-white flex flex-col justify-center">
                 <h2 className='text-5xl  text-[gold]'>Want to get in touch?</h2>
                 <p className='md:text-[1.3rem] md:px-2 text-[0.8rem] text-white'>Request a Callback.</p>

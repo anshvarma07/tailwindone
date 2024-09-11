@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <div>
         <Header></Header>
-        {/* <Heading></Heading> */}
+        {/* <Heading></Heading> */} 
         <Plans2 ></Plans2>
     </div>
   )

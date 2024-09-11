@@ -14,7 +14,7 @@ export default function PatentServicesModal({ Name }) {
 
   return (
     <>
-      <Button onClick={handleOpen} color="blue" className="bg-[#00df9a] text-black px-[40px] py-[15px] rounded-lg w-[100%] duration-500 my-8 hover:bg-black hover:text-white">
+      <Button onClick={handleOpen} color="blue" className="bg-[#3F6D66] text-black px-[40px] py-[15px] rounded-lg w-[100%] duration-500 my-8 hover:bg-black hover:text-white">
         {Name}
       </Button>
 
