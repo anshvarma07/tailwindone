@@ -48,8 +48,8 @@ export default function Plans() {
                     <p className='text-gray-600 mb-6 px-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente praesentium dolore accusantium rem impedit illum commodi ab! Aspernatur, odio!
                     </p>
-                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg font-bold text-[#235951] rounded-md text-black mt-5'>
-                        Start Trial
+                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg text-sm font-bold text-[#235951] rounded-md text-black mt-5'>
+                        KNOW MORE
                     </button>
                 </div>
                 <div className="shadow-2xl hover:scale-105 transition-transform duration-300 rounded-xl text-center p-6">
@@ -60,8 +60,8 @@ export default function Plans() {
                     <p className='text-gray-600 mb-6 px-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente praesentium dolore accusantium rem impedit illum commodi ab! Aspernatur, odio!
                     </p>
-                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg font-bold text-[#235951] rounded-md text-black mt-5'>
-                        Start Trial
+                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg text-sm font-bold text-[#235951] rounded-md text-black mt-5'>
+                        KNOW MORE
                     </button>
                 </div>
                 <div className="shadow-2xl hover:scale-105 transition-transform duration-300 rounded-xl text-center p-6">
@@ -72,8 +72,8 @@ export default function Plans() {
                     <p className='text-gray-600 mb-6 px-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente praesentium dolore accusantium rem impedit illum commodi ab! Aspernatur, odio!
                     </p>
-                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg font-bold text-[#235951] rounded-md text-black mt-5'>
-                        Start Trial
+                    <button type="button" className='bg-[#00DF9A] px-[20px] text-sm py-[10px] text-lg  text-[#235951] rounded-md text-black mt-5'>
+                        KNOW MORE
                     </button>
                 </div>
                 <div className="shadow-2xl hover:scale-105 transition-transform duration-300 rounded-xl text-center p-6">
@@ -84,8 +84,8 @@ export default function Plans() {
                     <p className='text-gray-600 mb-6 px-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente praesentium dolore accusantium rem impedit illum commodi ab! Aspernatur, odio!
                     </p>
-                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg font-bold text-[#235951] rounded-md text-black mt-5'>
-                        Start Trial
+                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg text-sm text-[#235951] rounded-md text-black mt-5'>
+                        KNOW MORE
                     </button>
                 </div>
                 <div className="shadow-2xl hover:scale-105 transition-transform duration-300 rounded-xl text-center p-6">
@@ -96,8 +96,8 @@ export default function Plans() {
                     <p className='text-gray-600 mb-6 px-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente praesentium dolore accusantium rem impedit illum commodi ab! Aspernatur, odio!
                     </p>
-                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg font-bold text-[#235951] rounded-md text-black mt-5'>
-                        Start Trial
+                    <button type="button" className='bg-[#00DF9A] px-[20px] py-[10px] text-lg text-sm  text-[#235951] rounded-md text-black mt-5'>
+                        KNOW MORE
                     </button>
                 </div>
             </div>

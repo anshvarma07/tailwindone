@@ -16,7 +16,7 @@ export default function Experts() {
         </button>
     </div>
     <div className="col-span-1 flex items-center justify-center">
-        <img className="h-[60vh] max-w-full object-contain" src={img1} alt=""/>
+        <img className="h-[50vh] max-w-full object-contain" src={img1} alt=""/>
     </div>
 </div>
   )
