@@ -13,9 +13,9 @@ const Accordion = ({ title, children }) => {
                 <span className={`text-3xl transform transition-transform duration-300 ${isOpen ? 'rotate-45' : 'rotate-0'}`}>+</span>
             </button>
             <div
-                className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[400px]' : 'max-h-0'}`}
+                className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[800px]' : 'max-h-0'}`}
             >
-                <div className="p-6 bg-[#2a6b62] text-white overflow-y-auto max-h-[400px]">
+                <div className="p-6 bg-[#2a6b62] text-white overflow-y-auto max-h-[800px]">
                     {children}
                 </div>
             </div>
@@ -28,109 +28,110 @@ const ServicesPage = () => {
         {
             category: "Patents",
             items: [
-                { title: "Knock out Patentability Search", description: "Preliminary search to determine if an invention is patentable." },
-                { title: "Infringement Search / Clearance / Freedom to Operate Search", description: "Ensures your product doesn't infringe on existing patents." },
-                { title: "Validity Search/Invalidity search", description: "Determines if an existing patent is valid or can be challenged." },
-                { title: "Infringement or Non-Infringement Search", description: "Investigates potential patent infringements." },
-                { title: "State of the Art Search", description: "Comprehensive search of existing technology in a field." },
-                { title: "Technology Landscape studies", description: "Analysis of technological trends and patent activities in a specific area." },
-                { title: "Patent Watch Search", description: "Monitoring new patent applications in your field of interest." },
-                { title: "Patent Prosecution", description: "Managing the patent application process with patent offices." },
-                { title: "Patent Drafting", description: "Writing detailed patent applications." },
-                { title: "Complete patent specification drafting", description: "Drafting full, detailed patent specifications." },
-                { title: "Provisional patent specification drafting", description: "Drafting initial, temporary patent applications." },
-                { title: "Patent Filing and Proceedings", description: "Handling the formal submission and follow-up of patent applications." },
-                { title: "Filing patent applications in Indian Patent Office", description: "Submitting patent applications to the Indian Patent Office." },
-                { title: "Filing ordinary patent applications in Indian Patent Office", description: "Submitting standard patent applications in India." },
-                { title: "Filing convention patent applications in Indian Patent Office", description: "Filing patents in India based on prior foreign applications." },
-                { title: "Filing National phase patent applications in Indian Patent Office", description: "Entering the national phase in India for international applications." },
-                { title: "Filing PCT applications and patent applications in patent offices outside India", description: "Handling international patent applications." },
-                { title: "Renewal of Indian Patents", description: "Managing the renewal process for patents in India." },
-                { title: "Filing statement relating to working of patent", description: "Submitting reports on the commercial use of patents." },
-                { title: "Pre grant opposition", description: "Challenging patent applications before they are granted." },
-                { title: "Post grant opposition", description: "Challenging patents after they have been granted." },
-                { title: "Patent Illustration", description: "Creating visual representations for patent applications." },
-                { title: "Patent Proof Reading", description: "Reviewing and refining patent documents for accuracy." },
-                { title: "Patent watch", description: "Monitoring new patent filings in specific technology areas." },
-                { title: "Patent monitoring", description: "Ongoing surveillance of patent activities in your field." },
-                { title: "Patent Valuation", description: "Assessing the financial value of patents." },
+                { title: "Knock out Patentability Search", description: "A quick and cost-effective preliminary search to assess whether your invention stands a strong chance of being patentable." },
+                { title: "Infringement Search / Clearance / Freedom to Operate Search", description: "A thorough investigation ensuring that your product or invention does not infringe upon existing patents, allowing for risk-free commercialization." },
+                { title: "Validity Search/Invalidity Search", description: "An in-depth analysis to determine the strength and enforceability of an existing patent, or to identify grounds for challenging its validity." },
+                { title: "Infringement or Non-Infringement Search", description: "An expert review of existing patents to detect potential infringement risks and protect your innovations from legal conflicts." },
+                { title: "State of the Art Search", description: "A comprehensive examination of the latest technologies and innovations within your field to support research and development decisions." },
+                { title: "Technology Landscape Studies", description: "Strategic insights into the evolving trends and competitive patent activities in specific technological sectors, helping you stay ahead in the innovation race." },
+                { title: "Patent Watch Search", description: "Ongoing monitoring of new patent applications within your industry, keeping you informed of emerging threats and opportunities." },
+                { title: "Patent Prosecution", description: "A full-service approach to managing the patent application process, from drafting to navigating through complex patent office procedures." },
+                { title: "Patent Drafting", description: "Crafting highly detailed, legally sound patent applications that accurately capture the essence of your invention and its market potential." },
+                { title: "Complete Patent Specification Drafting", description: "Preparing a comprehensive and legally precise document that outlines every aspect of your invention, ensuring robust patent protection." },
+                { title: "Provisional Patent Specification Drafting", description: "Developing a provisional application to establish early filing dates and protect your invention as you refine the details." },
+                { title: "Patent Filing and Proceedings", description: "Expert handling of patent submissions, including coordination with patent offices and managing all procedural formalities." },
+                { title: "Filing Patent Applications in Indian Patent Office", description: "Specialized services for submitting patent applications in the Indian jurisdiction, ensuring compliance with local regulations." },
+                { title: "Filing Ordinary Patent Applications in Indian Patent Office", description: "Guiding you through the process of filing standard patent applications in India, with full regulatory support." },
+                { title: "Filing Convention Patent Applications in Indian Patent Office", description: "Filing patents in India based on prior foreign applications to extend your IP protection globally." },
+                { title: "Filing National Phase Patent Applications in Indian Patent Office", description: "Managing the Indian national phase entry for your international patent applications under the Patent Cooperation Treaty (PCT)." },
+                { title: "Filing PCT Applications and Patent Applications in Patent Offices Outside India", description: "Global patent filing services, ensuring your invention is protected in multiple countries through the PCT system." },
+                { title: "Renewal of Indian Patents", description: "Efficient management of your patent renewals in India, ensuring continuous protection without any legal lapses." },
+                { title: "Filing Statement Relating to Working of Patent", description: "Submitting annual statements to the Indian Patent Office, demonstrating the commercial exploitation of your patents." },
+                { title: "Pre-Grant Opposition", description: "Legal support to challenge pending patent applications before they are granted, safeguarding your intellectual property interests." },
+                { title: "Post-Grant Opposition", description: "Protect your market position by challenging granted patents that may hinder your business or innovation efforts." },
+                { title: "Patent Illustration", description: "Professional, precise visual representations that enhance the clarity and effectiveness of your patent applications." },
+                { title: "Patent Proofreading", description: "Meticulous review of patent documents to eliminate errors, ensuring legal accuracy and airtight protection." },
+                { title: "Patent Watch", description: "A service designed to keep track of newly filed patents in your area of interest, so you're always informed of the latest developments." },
+                { title: "Patent Monitoring", description: "Ongoing, detailed surveillance of patent activities in your industry, helping you maintain a competitive edge." },
+                { title: "Patent Valuation", description: "Assessing the financial worth of your patent portfolio, providing you with critical insights into its market potential and licensing opportunities." },
             ]
         },
         {
             category: "Trademark",
             items: [
-                { title: "Trademark Search", description: "Investigating existing trademarks to ensure uniqueness." },
-                { title: "Trademark Filing & Registration", description: "Handling the process of registering new trademarks." },
-                { title: "Trademark Renewal", description: "Managing the renewal of existing trademarks." },
-                { title: "Trademark Watch", description: "Monitoring new trademark applications for potential conflicts." },
-                { title: "Industrial Design filing and prosecution", description: "Managing the registration process for industrial designs." },
-                { title: "Copyrights filing and prosecution", description: "Handling copyright registration and related legal processes." },
-                { title: "IP Valuation and Market Research", description: "Assessing the value of intellectual property and related market analysis." },
+                { title: "Trademark Search", description: "A detailed examination of existing trademarks to confirm the uniqueness and protectability of your brand." },
+                { title: "Trademark Filing & Registration", description: "Streamlined filing and registration process for new trademarks, securing your brand identity and legal rights." },
+                { title: "Trademark Renewal", description: "Expert management of trademark renewal processes to ensure uninterrupted protection of your brand." },
+                { title: "Trademark Watch", description: "Ongoing monitoring of new trademark applications to prevent conflicts and protect your brand from infringement." },
+                { title: "Industrial Design Filing and Prosecution", description: "Complete support for registering industrial designs, ensuring your product’s aesthetic features are legally protected." },
+                { title: "Copyrights Filing and Prosecution", description: "Handling all legal processes for copyright registration, ensuring your creative works are fully protected under the law." },
+                { title: "IP Valuation and Market Research", description: "In-depth analysis of the market potential and financial value of your intellectual property assets, guiding strategic decisions." },
             ]
         },
         {
             category: "Copyright",
             items: [
-                { title: "Copyright Registration", description: "Assisting with the formal registration of copyrights." },
-                { title: "Copyright Infringement Defense", description: "Legal support in cases of copyright violation." },
+                { title: "Copyright Registration", description: "Helping you navigate the formal process of copyright registration, ensuring legal protection for your creative works." },
+                { title: "Copyright Infringement Defense", description: "Providing expert legal support to defend against copyright violations and safeguard your intellectual property." },
             ]
         },
         {
             category: "Trade Secret",
             items: [
-                { title: "Trade Secret Protection Strategies", description: "Developing plans to safeguard valuable business information." },
-                { title: "Trade Secret Litigation", description: "Legal representation in trade secret disputes." },
+                { title: "Trade Secret Protection Strategies", description: "Developing customized strategies to protect your confidential business information from unauthorized use or disclosure." },
+                { title: "Trade Secret Litigation", description: "Expert legal representation in cases of trade secret theft, ensuring your business interests are fully protected." },
             ]
         },
         {
             category: "Civil Matters",
             items: [
-                { title: "Civil Litigation", description: "Representing clients in non-criminal legal disputes." },
-                { title: "Contract Disputes", description: "Handling disagreements related to contractual obligations." },
+                { title: "Civil Litigation", description: "Comprehensive legal representation in civil disputes, ensuring your rights and interests are effectively advocated." },
+                { title: "Contract Disputes", description: "Resolving contractual disagreements through expert negotiation or litigation, safeguarding your business relationships." },
             ]
         },
         {
             category: "Criminal Matters",
             items: [
-                { title: "Criminal Defense", description: "Legal representation for those accused of crimes." },
-                { title: "White Collar Crime", description: "Handling cases involving financial and business-related crimes." },
+                { title: "Criminal Defense", description: "Aggressive legal defense for individuals accused of criminal activities, protecting your rights at every stage." },
+                { title: "White Collar Crime", description: "Specialized legal services for financial and corporate crime cases, ensuring thorough representation and expert defense." },
             ]
         },
         {
             category: "Family Disputes",
             items: [
-                { title: "Divorce Proceedings", description: "Legal assistance in marital dissolutions." },
-                { title: "Child Custody", description: "Representation in child custody and visitation disputes." },
+                { title: "Divorce Proceedings", description: "Offering compassionate legal support for divorce cases, ensuring your rights and interests are prioritized." },
+                { title: "Child Custody", description: "Representation in child custody disputes, focusing on the best interests of the child while protecting your parental rights." },
             ]
         },
     ];
 
+
     return (
-        <div className="min-h-screen bg-gradient-to-b from-[#235951] to-[#3F6D66]  text-white pb-8 ">
-            <div className=" p-8 px-5 text-center">
-                <h1 className="mb-4 text-5xl font-extrabold leading-tight text-white md:text-6xl lg:text-7xl">
-                    <span className="bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-600 text-[gold]">
-                        S.S. Advocates  
-                    </span>
-                </h1>
-                {/* <p className="text-lg font-light text-gray-100 lg:text-xl md:mt-4">
-                We focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.
-            </p> */}
-            </div>
-            <h1 className="text-5xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300">Our Services</h1>
-            <div className="max-w-4xl mx-auto space-y-6 px-10">
-                {services.map((category, index) => (
-                    <Accordion key={index} title={category.category}>
-                        <ul className="space-y-4">
-                            {category.items.map((item, itemIndex) => (
-                                <li key={itemIndex} className="bg-[#1d4b45] rounded-lg p-4 transition-all duration-300 hover:bg-[#163b36] hover:shadow-lg">
-                                    <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                                    <p className="text-gray-300">{item.description}</p>
-                                </li>
-                            ))}
-                        </ul>
-                    </Accordion>
-                ))}
+        <div className="min-h-screen bg-[#235951] flex items-center justify-center p-4 md:p-8">
+            <div className="bg-white bg-opacity-90 rounded-lg shadow-xl max-w-4xl w-full p-6 md:p-8">
+                <div className="text-center mb-8">
+                    <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-[#235951] mb-4">
+                        S.S. Advocates
+                    </h1>
+                    <p className="text-lg font-light text-gray-700 max-w-3xl mx-auto">
+                        Empowering innovation and protecting your intellectual property with expert legal services tailored to your unique needs.
+                    </p>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-[#235951]">Our Comprehensive Services</h2>
+                <div className="space-y-6">
+                    {services.map((category, index) => (
+                        <Accordion key={index} title={category.category}>
+                            <ul className="space-y-4">
+                                {category.items.map((item, itemIndex) => (
+                                    <li key={itemIndex} className="bg-[#1d4b45] rounded-lg p-6 transition-all duration-300 hover:bg-[#163b36] hover:shadow-lg">
+                                        <h3 className="font-bold text-xl mb-3 text-emerald-300">{item.title}</h3>
+                                        <p className="text-gray-200 leading-relaxed">{item.description}</p>
+                                    </li>
+                                ))}
+                            </ul>
+                        </Accordion>
+                    ))}
+                </div>
             </div>
         </div>
     );
