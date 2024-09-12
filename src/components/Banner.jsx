@@ -8,9 +8,9 @@ import img5 from '../Assets/142.jpg';
 const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    { title: "Innovative Solutions", subtitle: "For Your Legal Needs", img: img2 },
+    { title: "Innovative Solutions", subtitle: "For Your Legal Needs", img: img4 },
     { title: "Expert Advocacy", subtitle: "Personalized Approach", img: img3 },
-    { title: "Protecting Your Rights", subtitle: "Securing Your Future", img: img4 },
+    { title: "Protecting Your Rights", subtitle: "Securing Your Future", img: img2 },
     { title: "Legal Excellence", subtitle: "Tailored to You", img: img5 },
   ];
 

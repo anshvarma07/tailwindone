@@ -9,17 +9,18 @@ export default function Newsletter() {
                 <p className='md:text-[1.3rem] md:px-2 text-[0.8rem] text-white'>Request a Callback.</p>
             </div>
             <div className="col-span-1 flex flex-col items-center md:items-center">
-                <form action="" className="w-full md:w-4/6 flex flex-col items-center">
+                <form action="https://formspree.io/f/xeojwgle" method='POST' className="w-full md:w-4/6 flex flex-col items-center">
                     <input
                         type="tel"
-                        placeholder='+91-XXXXXXXXXX'
+                        placeholder='XXXXXXXXXX'
                         className='p-2 rounded-md m-3 text-center md:text-left w-full max-w-md'
+                        name="PhoneNumber"
                     />
                     <button
-                        type="button"
+                        type="submit"
                         className='bg-black text-white p-3 rounded-md text-sm hover:bg-black/80 w-full max-w-md'
                     >
-                        Notify Me!
+                        Request a Callback!
                     </button>
                 </form>
                 <div className="text-center items-start">

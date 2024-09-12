@@ -45,11 +45,12 @@ function Header() {
                 ) : (
                   <Link
                     to={item.path}
-                    className="text-white hover:text-emerald-300 transition-colors duration-300 relative group"
+                    className="text-white p-2 mx-5 hover:text-emerald-300 transition-colors duration-300 relative group"
                   >
                     {item.name}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-300 transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute bottom-0 left-0 w-0 border-b-2 border-emerald-300 transition-all duration-300 group-hover:w-full"></span>
                   </Link>
+
                 )}
               </li>
             ))}
@@ -66,9 +67,8 @@ function Header() {
 
       {/* Mobile menu */}
       <nav
-        className={`md:hidden fixed top-[76px] right-0 bottom-0 left-0 z-40 bg-[#235951] transform transition-transform duration-300 ease-in-out ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`md:hidden fixed top-[76px] right-0 bottom-0 left-0 z-40 bg-[#235951] transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <ul className="flex flex-col items-center justify-center h-full space-y-8">
           {navItems.map((item) => (

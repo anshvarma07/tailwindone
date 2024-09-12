@@ -3,7 +3,7 @@ import img1 from '../Assets/6.jpeg'
 
 export default function Experts() {
   return (
-<div className="mx-auto md:grid grid-cols-3 gap-4 bg-gradient-to-b from-[#235951] to-[#3F6D66]">
+<div className="mx-auto md:grid grid-cols-3 gap-4 bg-gradient-to-b from-[#235951] to-[#3F6D66] md:py-24">
     <div className="col-span-2 md:p-20 py-10 pl-5 pr-2 flex flex-col justify-center">
         <h1 className="text-[gold] font-bold text-2xl md:text-3xl">
             A leading full service intellectual property law firm.

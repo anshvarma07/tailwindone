@@ -27,19 +27,20 @@ const Footer = () => {
 
           {/* Newsletter Signup */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Stay Updated</h3>
-            <p className="mb-4">Subscribe to our newsletter for legal insights and firm updates.</p>
-            <form className="flex flex-col sm:flex-row">
+            <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
+            <p className="mb-4">Get in touch for legal insights.</p>
+            <form className="flex flex-col sm:flex-row" action="https://formspree.io/f/xeojwgle" method='POST'>
               <input
-                type="email"
-                placeholder="Enter your email"
+                type="tel"
+                name="PhoneNumber"
+                placeholder="Enter your Number"
                 className="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 sm:mb-0"
               />
               <button
                 type="submit"
                 className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-md transition-colors"
               >
-                Subscribe
+                Callback!
               </button>
             </form>
           </div>
