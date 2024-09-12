@@ -1,6 +1,14 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <footer className="bg-gray-900 text-white" id="footer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -12,19 +20,18 @@ const Footer = () => {
             <p className="mb-2">(555) 123-4567</p>
             <p>contact@johndoelaw.com</p>
           </div>
-
+          
           {/* Quick Links */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#home" className="hover:text-gray-300 transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-gray-300 transition-colors">About Us</a></li>
-              <li><a href="#practice-areas" className="hover:text-gray-300 transition-colors">Practice Areas</a></li>
-              <li><a href="#contact" className="hover:text-gray-300 transition-colors">Contact</a></li>
-              <li><a href="#privacy-policy" className="hover:text-gray-300 transition-colors">Privacy Policy</a></li>
+              <li><Link to="/" onClick={() => handleNavigation('/')} className="hover:text-gray-300 transition-colors">Home</Link></li>
+              <li><Link to="/about" onClick={() => handleNavigation('/about')} className="hover:text-gray-300 transition-colors">About Us</Link></li>
+              <li><Link to="/about" onClick={() => handleNavigation('/services')} className="hover:text-gray-300 transition-colors">Services</Link></li>
+              <li><Link to="#contact"  className="hover:text-gray-300 transition-colors">Contact</Link></li>
             </ul>
           </div>
-
+          
           {/* Newsletter Signup */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
@@ -45,7 +52,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-
+        
         {/* Social Media and Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center">
           <div className="flex space-x-4 mb-4 sm:mb-0">
