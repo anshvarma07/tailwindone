@@ -12,7 +12,7 @@ export default function Newsletter() {
                 <form action="https://formspree.io/f/xeojwgle" method='POST' className="w-full md:w-4/6 flex flex-col items-center">
                     <input
                         type="tel"
-                        placeholder='XXXXXXXXXX'
+                        placeholder='Enter Phone or Email Address'
                         className='p-2 rounded-md m-3 text-center md:text-left w-full max-w-md'
                         name="PhoneNumber"
                     />
@@ -20,7 +20,7 @@ export default function Newsletter() {
                         type="submit"
                         className='bg-black text-white p-3 rounded-md text-sm hover:bg-black/80 w-full max-w-md'
                     >
-                        Request a Callback!
+                        Get in Touch!
                     </button>
                 </form>
                 <div className="text-center items-start">

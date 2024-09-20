@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Quicknav from "./Quicknav"
 
 const Accordion = ({ title, children, isOpen, toggleOpen }) => {
     return (
@@ -19,7 +20,7 @@ const ServicesPage = () => {
     const services = [
         {
             category: "Patents",
-            items: [
+            href:"patent",items: [
                 { title: "Knock out Patentability Search", description: "A quick and cost-effective preliminary search to assess whether your invention stands a strong chance of being patentable." },
                 { title: "Infringement Search / Clearance / Freedom to Operate Search", description: "A thorough investigation ensuring that your product or invention does not infringe upon existing patents, allowing for risk-free commercialization." },
                 { title: "Validity Search/Invalidity Search", description: "An in-depth analysis to determine the strength and enforceability of an existing patent, or to identify grounds for challenging its validity." },
@@ -50,7 +51,7 @@ const ServicesPage = () => {
         },
         {
             category: "Trademark",
-            items: [
+            href:"trademark",items: [
                 { title: "Trademark Search", description: "A detailed examination of existing trademarks to confirm the uniqueness and protectability of your brand." },
                 { title: "Trademark Filing & Registration", description: "Streamlined filing and registration process for new trademarks, securing your brand identity and legal rights." },
                 { title: "Trademark Renewal", description: "Expert management of trademark renewal processes to ensure uninterrupted protection of your brand." },
@@ -62,40 +63,44 @@ const ServicesPage = () => {
         },
         {
             category: "Copyright",
-            items: [
+            href:"copyright",items: [
                 { title: "Copyright Registration", description: "Helping you navigate the formal process of copyright registration, ensuring legal protection for your creative works." },
                 { title: "Copyright Infringement Defense", description: "Providing expert legal support to defend against copyright violations and safeguard your intellectual property." },
             ]
         },
         {
             category: "Trade Secret",
-            items: [
+            href:"tradesecret",items: [
                 { title: "Trade Secret Protection Strategies", description: "Developing customized strategies to protect your confidential business information from unauthorized use or disclosure." },
                 { title: "Trade Secret Litigation", description: "Expert legal representation in cases of trade secret theft, ensuring your business interests are fully protected." },
             ]
         },
         {
             category: "Civil Matters",
-            items: [
+            href:"civil",items: [
                 { title: "Civil Litigation", description: "Comprehensive legal representation in civil disputes, ensuring your rights and interests are effectively advocated." },
                 { title: "Contract Disputes", description: "Resolving contractual disagreements through expert negotiation or litigation, safeguarding your business relationships." },
             ]
         },
         {
             category: "Criminal Matters",
-            items: [
+            href:"criminal",items: [
                 { title: "Criminal Defense", description: "Aggressive legal defense for individuals accused of criminal activities, protecting your rights at every stage." },
                 { title: "White Collar Crime", description: "Specialized legal services for financial and cor   porate crime cases, ensuring thorough representation and expert defense." },
             ]
         },
         {
             category: "Family Disputes",
-            items: [
+            href:"family",items: [
                 { title: "Divorce Proceedings", description: "Offering compassionate legal support for divorce cases, ensuring your rights and interests are prioritized." },
                 { title: "Child Custody", description: "Representation in child custody disputes, focusing on the best interests of the child while protecting your parental rights." },
             ]
         },
     ];
+    const navItems = services.map(service => ({
+        href: service.href,
+        text: service.category
+    }));
 
 
     const toggleCategory = (category) => {
@@ -106,28 +111,30 @@ const ServicesPage = () => {
         <div className="min-h-screen bg-[#235951] flex flex-col items-center justify-start p-2 md:p-8">
             <div className="w-full max-w-6xl">
                 <div className="text-center mb-4 md:mb-8">
-                    <h1 className="text-[gold] text-4xl md:text-6xl font-extrabold leading-tight mb-2 md:mb-4">
+                    <h1 className="text-3xl md:text-5xl font-extrabold leading-tight text-white mb-2 md:mb-4">
                         S.S. Advocates
                     </h1>
-                    <p className="text-sm md:text-xl font-light text-gray-200 max-w-3xl mx-auto">
+                    <p className="text-sm md:text-lg font-light text-gray-200 max-w-3xl mx-auto">
                         Empowering innovation and protecting your intellectual property with expert legal services tailored to your unique needs.
                     </p>
                 </div>
                 <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-8 text-center text-white">Our Comprehensive Services</h2>
+                <Quicknav navItems={navItems} />
                 <div className="space-y-2 md:space-y-6">
                     {services.map((category, index) => (
-                        <div key={index}>
+                        <div key={index} id={category.href}>
                             <Accordion
                                 title={category.category}
                                 isOpen={openCategory === category.category}
                                 toggleOpen={() => toggleCategory(category.category)}
+                                
                             />
                             {openCategory === category.category && (
                                 <div className="mt-2 p-4 md:p-6 bg-[#2a6b62] rounded-lg shadow-inner">
                                     <ul className="space-y-2 md:space-y-4">
                                         {category.items.map((item, itemIndex) => (
                                             <li key={itemIndex} className="bg-[#1d4b45] rounded-lg p-3 md:p-6 transition-all duration-300 hover:bg-[#163b36] hover:shadow-lg">
-                                                <h3 className="font-bold text-xl md:text-3xl mb-2 md:mb-3 text-[gold]">{item.title}</h3>
+                                                <h3 className="font-bold text-lg md:text-xl mb-2 md:mb-3 text-[gold]" id="trademark">{item.title}</h3>
                                                 <p className="text-sm md:text-base text-gray-200 leading-relaxed">{item.description}</p>
                                             </li>
                                         ))}

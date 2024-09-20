@@ -27,7 +27,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" onClick={() => handleNavigation('/')} className="hover:text-gray-300 transition-colors">Home</Link></li>
               <li><Link to="/about" onClick={() => handleNavigation('/about')} className="hover:text-gray-300 transition-colors">About Us</Link></li>
-              <li><Link to="/services" onClick={() => handleNavigation('/services')} className="hover:text-gray-300 transition-colors">Services</Link></li>
+              <li><Link to="/services#Patents" onClick={() => handleNavigation('/services')} className="hover:text-gray-300 transition-colors">Services</Link></li>
               <li><Link to="#contact"  className="hover:text-gray-300 transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -40,14 +40,14 @@ const Footer = () => {
               <input
                 type="tel"
                 name="PhoneNumber"
-                placeholder="Enter your Number"
+                placeholder="Enter Number or Email"
                 className="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 sm:mb-0"
               />
               <button
                 type="submit"
                 className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-md transition-colors"
               >
-                Callback!
+                Get in Touch!
               </button>
             </form>
           </div>
