@@ -53,36 +53,40 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen bg-[#235951] flex items-center justify-center p-4 md:p-8">
-      <div className="bg-white bg-opacity-90 rounded-lg shadow-xl max-w-4xl w-full p-6 md:p-8">
-        <h1 className="text-3xl md:text-4xl font-bold  text-[#235951] text-center mb-6">About SS Advocates</h1>
-        <p className="text-gray-700 text-center mb-8">
+      <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl shadow-xl max-w-7xl w-full p-6 md:p-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#FFD700] text-center mb-6">About SS Advocates</h1>
+        <p className="text-gray-200 text-center mb-8 text-lg">
           SS Advocates is a leading law firm specializing in intellectual property law and various other legal services. 
           With our team of experienced professionals, we provide comprehensive legal solutions to protect and promote our clients' interests.
         </p>
-
-        <div className="bg-gray-100 rounded-lg overflow-hidden">
-          <div className="flex flex-wrap bg-[#235951] p-1">
+        
+        <div className="bg-white bg-opacity-5 rounded-xl overflow-hidden">
+          <div className="flex flex-wrap bg-[#1d4b45] p-1">
             {Object.keys(tabContent).map((tab) => (
-              <button 
+              <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`flex-1 text-white py-2 px-4 text-sm md:text-base transition-colors duration-300
-                  ${activeTab === tab 
-                    ? 'bg-white bg-opacity-20 font-semibold' 
+                className={`flex-1 text-white py-3 px-4 text-sm md:text-base transition-colors duration-300 flex items-center justify-center space-x-2
+                  ${activeTab === tab
+                    ? 'bg-white bg-opacity-20 font-semibold'
                     : 'hover:bg-white hover:bg-opacity-10'}`}
               >
-                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                {tabContent[tab].icon}
+                <span>{tab.charAt(0).toUpperCase() + tab.slice(1)}</span>
               </button>
             ))}
           </div>
-
+          
           <div className="p-6">
-            <h2 className="text-2xl font-semibold text-[#235951] mb-3">{tabContent[activeTab].title}</h2>
-            <p className="text-gray-600 mb-4">{tabContent[activeTab].description}</p>
-            <ul className="space-y-2">
+            <h2 className="text-2xl font-semibold text-[#FFD700] mb-3">{tabContent[activeTab].title}</h2>
+            <p className="text-gray-300 mb-4">{tabContent[activeTab].description}</p>
+            <ul className="space-y-3">
               {tabContent[activeTab].items.map((item, index) => (
-                <li key={index} className="bg-gray-200 p-3 rounded-md text-gray-700 hover:bg-gray-300 transition-colors duration-300">
-                  {item}
+                <li key={index} className="bg-white bg-opacity-10 p-4 rounded-lg text-gray-200 hover:bg-opacity-15 transition-colors duration-300 flex items-center space-x-3">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#FFD700] flex items-center justify-center text-[#235951] font-bold">
+                    {index + 1}
+                  </div>
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>

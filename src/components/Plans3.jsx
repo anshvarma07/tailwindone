@@ -276,7 +276,7 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-[#3F6D66] text-white p-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-7xl font-extrabold leading-tight text-[#FFD700] mb-4 tracking-tight">
             S.S. Advocates
