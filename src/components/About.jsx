@@ -54,7 +54,7 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-[#235951] flex items-center justify-center p-4 md:p-8">
       <div className="bg-white bg-opacity-90 rounded-lg shadow-xl max-w-4xl w-full p-6 md:p-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-[#235951] text-center mb-6">About SS Advocates</h1>
+        <h1 className="text-3xl md:text-4xl font-bold  text-[#235951] text-center mb-6">About SS Advocates</h1>
         <p className="text-gray-700 text-center mb-8">
           SS Advocates is a leading law firm specializing in intellectual property law and various other legal services. 
           With our team of experienced professionals, we provide comprehensive legal solutions to protect and promote our clients' interests.

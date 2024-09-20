@@ -15,10 +15,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Law Offices of SS Advocates</h3>
-            <p className="mb-2">123 Legal Street, Cityville, State 12345</p>
-            <p className="mb-2">(555) 123-4567</p>
-            <p>contact@johndoelaw.com</p>
+            <h3 className="text-xl font-semibold mb-4">Law Office of SS Advocates</h3>
+            <p className="mb-2">Office Space No.309, Third floor, Plot No.9, Sector - 4, Vikash Surya Galaxy Dwarka New Delhi-110078</p>
+            <p className="mb-2">+91 9266532527</p>
+            <p>info@ssadvocates.co.in</p>
           </div>
           
           {/* Quick Links */}
@@ -27,7 +27,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" onClick={() => handleNavigation('/')} className="hover:text-gray-300 transition-colors">Home</Link></li>
               <li><Link to="/about" onClick={() => handleNavigation('/about')} className="hover:text-gray-300 transition-colors">About Us</Link></li>
-              <li><Link to="/about" onClick={() => handleNavigation('/services')} className="hover:text-gray-300 transition-colors">Services</Link></li>
+              <li><Link to="/services" onClick={() => handleNavigation('/services')} className="hover:text-gray-300 transition-colors">Services</Link></li>
               <li><Link to="#contact"  className="hover:text-gray-300 transition-colors">Contact</Link></li>
             </ul>
           </div>

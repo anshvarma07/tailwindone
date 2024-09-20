@@ -1,29 +1,21 @@
 import React, { useState } from 'react';
 
-const Accordion = ({ title, children }) => {
-    const [isOpen, setIsOpen] = useState(false);
-
+const Accordion = ({ title, children, isOpen, toggleOpen }) => {
     return (
-        <div className="mb-6 overflow-hidden rounded-lg shadow-lg transition-all duration-300 ease-in-out">
+        <div className="mb-2 overflow-hidden rounded-lg shadow-lg transition-all duration-300 ease-in-out">
             <button
-                className="w-full text-left p-6 bg-gradient-to-r from-[#1d4b45] to-[#2a6b62] hover:from-[#2a6b62] hover:to-[#1d4b45] transition-all duration-300 flex justify-between items-center"
-                onClick={() => setIsOpen(!isOpen)}
+                className="w-full text-left p-4 md:p-6 bg-gradient-to-r from-[#1d4b45] to-[#2a6b62] hover:from-[#2a6b62] hover:to-[#1d4b45] transition-all duration-300 flex justify-between items-center"
+                onClick={toggleOpen}
             >
-                <span className="text-2xl font-semibold text-white">{title}</span>
-                <span className={`text-3xl transform transition-transform duration-300 ${isOpen ? 'rotate-45' : 'rotate-0'}`}>+</span>
+                <span className="text-xl md:text-2xl font-semibold text-white">{title}</span>
+                <span className={`text-2xl md:text-3xl transform transition-transform duration-300 ${isOpen ? 'rotate-45' : 'rotate-0'}`}>+</span>
             </button>
-            <div
-                className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[800px]' : 'max-h-0'}`}
-            >
-                <div className="p-6 bg-[#2a6b62] text-white overflow-y-auto max-h-[800px]">
-                    {children}
-                </div>
-            </div>
         </div>
     );
 };
 
 const ServicesPage = () => {
+    const [openCategory, setOpenCategory] = useState(null);
     const services = [
         {
             category: "Patents",
@@ -93,7 +85,7 @@ const ServicesPage = () => {
             category: "Criminal Matters",
             items: [
                 { title: "Criminal Defense", description: "Aggressive legal defense for individuals accused of criminal activities, protecting your rights at every stage." },
-                { title: "White Collar Crime", description: "Specialized legal services for financial and corporate crime cases, ensuring thorough representation and expert defense." },
+                { title: "White Collar Crime", description: "Specialized legal services for financial and cor   porate crime cases, ensuring thorough representation and expert defense." },
             ]
         },
         {
@@ -106,30 +98,43 @@ const ServicesPage = () => {
     ];
 
 
+    const toggleCategory = (category) => {
+        setOpenCategory(openCategory === category ? null : category);
+    };
+
     return (
-        <div className="min-h-screen bg-[#235951] flex items-center justify-center p-4 md:p-8">
-            <div className="bg-white bg-opacity-90 rounded-lg shadow-xl max-w-4xl w-full p-6 md:p-8">
-                <div className="text-center mb-8">
-                    <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-[#235951] mb-4">
+        <div className="min-h-screen bg-[#235951] flex flex-col items-center justify-start p-2 md:p-8">
+            <div className="w-full max-w-6xl">
+                <div className="text-center mb-4 md:mb-8">
+                    <h1 className="text-[gold] text-4xl md:text-6xl font-extrabold leading-tight mb-2 md:mb-4">
                         S.S. Advocates
                     </h1>
-                    <p className="text-lg font-light text-gray-700 max-w-3xl mx-auto">
+                    <p className="text-sm md:text-xl font-light text-gray-200 max-w-3xl mx-auto">
                         Empowering innovation and protecting your intellectual property with expert legal services tailored to your unique needs.
                     </p>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-[#235951]">Our Comprehensive Services</h2>
-                <div className="space-y-6">
+                <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-8 text-center text-white">Our Comprehensive Services</h2>
+                <div className="space-y-2 md:space-y-6">
                     {services.map((category, index) => (
-                        <Accordion key={index} title={category.category}>
-                            <ul className="space-y-4">
-                                {category.items.map((item, itemIndex) => (
-                                    <li key={itemIndex} className="bg-[#1d4b45] rounded-lg p-6 transition-all duration-300 hover:bg-[#163b36] hover:shadow-lg">
-                                        <h3 className="font-bold text-xl mb-3 text-emerald-300">{item.title}</h3>
-                                        <p className="text-gray-200 leading-relaxed">{item.description}</p>
-                                    </li>
-                                ))}
-                            </ul>
-                        </Accordion>
+                        <div key={index}>
+                            <Accordion
+                                title={category.category}
+                                isOpen={openCategory === category.category}
+                                toggleOpen={() => toggleCategory(category.category)}
+                            />
+                            {openCategory === category.category && (
+                                <div className="mt-2 p-4 md:p-6 bg-[#2a6b62] rounded-lg shadow-inner">
+                                    <ul className="space-y-2 md:space-y-4">
+                                        {category.items.map((item, itemIndex) => (
+                                            <li key={itemIndex} className="bg-[#1d4b45] rounded-lg p-3 md:p-6 transition-all duration-300 hover:bg-[#163b36] hover:shadow-lg">
+                                                <h3 className="font-bold text-xl md:text-3xl mb-2 md:mb-3 text-[gold]">{item.title}</h3>
+                                                <p className="text-sm md:text-base text-gray-200 leading-relaxed">{item.description}</p>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                        </div>
                     ))}
                 </div>
             </div>

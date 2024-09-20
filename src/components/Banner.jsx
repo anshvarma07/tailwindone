@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // Import icons
 import img2 from '../Assets/139.jpg';
 import img3 from '../Assets/140.jpg';
-import img4 from '../Assets/141.jpg';
+// import img4 from '../Assets/141.jpg';
 import img5 from '../Assets/142.jpg';
 
 const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    { title: "Innovative Solutions", subtitle: "For Your Legal Needs", img: img4 },
+    { title: "Innovative Solutions", subtitle: "For Your Legal Needs", img: img2 },
     { title: "Expert Advocacy", subtitle: "Personalized Approach", img: img3 },
     { title: "Protecting Your Rights", subtitle: "Securing Your Future", img: img2 },
     { title: "Legal Excellence", subtitle: "Tailored to You", img: img5 },
@@ -44,13 +44,13 @@ const Banner = () => {
         >
           <div className="flex flex-col md:flex-row h-full">
             <div className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center p-6 md:p-12 text-center md:text-left">
-              <h2 className="text-[gold] text-3xl md:text-4xl lg:text-6xl font-bold mb-2 md:mb-4">
+              <h2 className="text-[gold] text-xl md:text-2xl lg:text-5xl font-bold  mb-2 md:mb-4">
                 {slide.title}
               </h2>
               <p className="text-white text-xl md:text-2xl lg:text-4xl font-semibold mb-4 md:mb-8">
                 {slide.subtitle}
               </p>
-              <button className="bg-white text-[#235951] font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300">
+              <button className="bg-white text-[#235951] font-bold  py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300" onClick={() => document.getElementById('services').scrollIntoView({ behavior: 'smooth' })}>
                 Get Started
               </button>
             </div>
