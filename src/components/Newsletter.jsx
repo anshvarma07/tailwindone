@@ -9,9 +9,9 @@ export default function Newsletter() {
                 <p className='md:text-[1.3rem] md:px-2 text-[0.8rem] text-white'>Request a Callback.</p>
             </div>
             <div className="col-span-1 flex flex-col items-center md:items-center">
-                <form action="https://formspree.io/f/xeojwgle" method='POST' className="w-full md:w-4/6 flex flex-col items-center">
+                <form action="https://formspree.io/f/mrbzworn" method='POST' className="w-full md:w-4/6 flex flex-col items-center">
                     <input
-                        type="tel"
+                        type="text"
                         placeholder='Enter Phone or Email Address'
                         className='p-2 rounded-md m-3 text-center md:text-left w-full max-w-md'
                         name="PhoneNumber"

@@ -36,7 +36,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
             <p className="mb-4">Get in touch for legal insights.</p>
-            <form className="flex flex-col sm:flex-row" action="https://formspree.io/f/xeojwgle" method='POST'>
+            <form className="flex flex-col sm:flex-row" action="https://formspree.io/f/mrbzworn" method='POST'>
               <input
                 type="tel"
                 name="PhoneNumber"
