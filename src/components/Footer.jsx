@@ -58,7 +58,7 @@ const Footer = () => {
           <div className="flex space-x-4 mb-4 sm:mb-0">
             <a href="#facebook" className="hover:text-blue-400 transition-colors">Facebook</a>
             <a href="#twitter" className="hover:text-blue-400 transition-colors">Twitter</a>
-            <a href="#linkedin" className="hover:text-blue-400 transition-colors">LinkedIn</a>
+            <a href="https://www.linkedin.com/company/ss-advocates/?viewAsMember=true" className="hover:text-blue-400 transition-colors">LinkedIn</a>
           </div>
           <p className="text-sm text-gray-400">
             © {new Date().getFullYear()} Law Offices of SS Advocates. All rights reserved.
