@@ -318,7 +318,7 @@ const Services = () => {
                   </div>
                   <div>
                     <strong className="text-[#FFD700]">{item.name}:</strong>{' '}
-                    <span className="text-gray-200">{item.description}</span>
+                    <span className="text-gray-200">{item.description2}</span>
                   </div>
                 </li>
               ))}
