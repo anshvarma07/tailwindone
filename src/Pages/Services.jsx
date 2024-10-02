@@ -13,6 +13,8 @@ export default function Services() {
         {/* <Plans2 ></Plans2> */}
         <Plans3></Plans3>
         <Footer></Footer>
+        
+
     </div>
   )
 }

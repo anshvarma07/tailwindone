@@ -27,7 +27,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" onClick={() => handleNavigation('/')} className="hover:text-gray-300 transition-colors">Home</Link></li>
               <li><Link to="/about" onClick={() => handleNavigation('/about')} className="hover:text-gray-300 transition-colors">About Us</Link></li>
-              <li><Link to="/services#Patents" onClick={() => handleNavigation('/services')} className="hover:text-gray-300 transition-colors">Services</Link></li>
+              <li><Link to="/services/Patents" onClick={() => handleNavigation('/services')} className="hover:text-gray-300 transition-colors">Services</Link></li>
               <li><Link to="#contact"  className="hover:text-gray-300 transition-colors">Contact</Link></li>
             </ul>
           </div>

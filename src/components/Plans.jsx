@@ -42,43 +42,43 @@ const Plans = () => {
             title: "Patent Services",
             image: img1,
             description: "Protect your inventions and innovations with our comprehensive patent services. We guide you through the entire process, from patent search to filing and prosecution.",
-            lookup: "/services#Patents", // Update to the correct hash
+            lookup: "/services/Patents", // Update to the correct hash
         },
         {
             title: "Trademark Services",
             image: img2,
             description: "Safeguard your brand identity with our trademark services. We handle trademark searches, registration, and enforcement to protect your valuable business assets.",
-            lookup: "/services#Trademark", // Update to the correct hash
+            lookup: "/services/Trademark", // Update to the correct hash
         },
         {
             title: "Copyright",
             image: img3,
             description: "Secure your creative works with our copyright services. We assist in registering and protecting your original literary, musical, dramatic, and artistic creations.",
-            lookup: "/services#Copyright", // Update to the correct hash
+            lookup: "/services/Copyright", // Update to the correct hash
         },
         {
             title: "Trade Secret",
             image: img4,
             description: "Preserve your competitive edge with our trade secret protection strategies. We help you identify, secure, and enforce your confidential business information.",
-            lookup: "/services#TradeSecret", // Update to the correct hash
+            lookup: "/services/TradeSecret", // Update to the correct hash
         },
         {
             title: "Civil Matters",
             image: img5,
             description: "Navigate complex civil litigation with our experienced team. We represent clients in various disputes, including contract, property, and tort cases.",
-            lookup: "/services#CivilMatters", // Update to the correct hash
+            lookup: "/services/Civil%20Matters", // Update to the correct hash
         },
         {
             title: "Criminal Matters",
             image: img6,
             description: "Defend your rights with our skilled criminal defense attorneys. We provide robust representation in all types of criminal cases, from misdemeanors to felonies.",
-            lookup: "/services#CriminalMatters", // Update to the correct hash
+            lookup: "/services/Criminal%20Matters", // Update to the correct hash
         },
         {
             title: "Family Disputes",
             image: img7,
             description: "Find resolution in family matters with our compassionate approach. We handle divorce, child custody, alimony, and other family law issues with sensitivity and expertise.",
-            lookup: "/services#FamilyDisputes", // Update to the correct hash
+            lookup: "/services/Family%20Disputes", // Update to the correct hash
         }
     ];
 

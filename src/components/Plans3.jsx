@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate, Link } from 'react-router-dom';
+// import { servicesData } from './servicesData'; // Assume this file exists with your services data
 
 const servicesData = {
   Patents: {
@@ -164,7 +163,7 @@ const servicesData = {
     ],
   },
   TradeSecret: {
-    description: `Trade secrets refer to confidential business information that provides a competitive edge. Protecting trade secrets is crucial for maintaining business integrity and value. Unlike patents, trade secrets are not disclosed to the public, allowing businesses to maintain their advantages without formal registration. Our firm focuses on creating and implementing effective strategies to safeguard your trade secrets against unauthorized use and disclosure. We assist in developing comprehensive confidentiality agreements, conducting audits to identify sensitive information, and providing employee training to ensure that everyone understands the importance of protecting trade secrets. By working with us, you can ensure that your proprietary information remains confidential and your competitive position is strengthened.`,
+    description: `Trade secrets refer to confidential business information that provides a competitive edge. Protecting trade secrets is crucial for maintaining business integrity and value. Unlike 3, trade secrets are not disclosed to the public, allowing businesses to maintain their advantages without formal registration. Our firm focuses on creating and implementing effective strategies to safeguard your trade secrets against unauthorized use and disclosure. We assist in developing comprehensive confidentiality agreements, conducting audits to identify sensitive information, and providing employee training to ensure that everyone understands the importance of protecting trade secrets. By working with us, you can ensure that your proprietary information remains confidential and your competitive position is strengthened.`,
     services: [
       {
         name: 'Trade Secret Audits',
@@ -258,20 +257,22 @@ const servicesData = {
 };
 
 
-
 const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
-  const location = useLocation();
+  const { serviceName } = useParams();
+  const navigate = useNavigate();
+
   useEffect(() => {
-    // Check for the hash in the URL
-    const hash = location.hash.replace('#', '');
-    if (servicesData[hash]) {
-      setSelectedService(hash);
+    // Check for the serviceName in the URL
+    if (servicesData[serviceName]) {
+      setSelectedService(serviceName);
+    } else {
+      setSelectedService(null);
     }
-  }, [location]);
+  }, [serviceName]);
 
   const handleServiceClick = (service) => {
-    setSelectedService(service);
+    navigate(`/services/${service}`);
   };
 
   return (
@@ -290,15 +291,15 @@ const Services = () => {
           <ul className="flex flex-wrap justify-around p-2">
             {Object.keys(servicesData).map((service) => (
               <li key={service} className="m-2">
-                <button
-                  onClick={() => handleServiceClick(service)}
+                <Link
+                  to={`/services/${service}`}
                   className={`flex items-center space-x-2 text-white hover:bg-[#1d4b45] px-6 py-3 rounded-xl transition duration-300 ${
                     selectedService === service ? 'bg-[#1d4b45]' : ''
                   }`}
                 >
                   {servicesData[service].icon}
                   <span>{service}</span>
-                </button>
+                </Link>
               </li>
             ))}
           </ul>
@@ -317,7 +318,7 @@ const Services = () => {
                   </div>
                   <div>
                     <strong className="text-[#FFD700]">{item.name}:</strong>{' '}
-                    <span className="text-gray-200">{item.description2}</span>
+                    <span className="text-gray-200">{item.description}</span>
                   </div>
                 </li>
               ))}
