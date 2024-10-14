@@ -32,7 +32,7 @@ const AboutUs = () => {
       description: "Comprehensive legal solutions for various needs",
       items: [
         "Copyright filing and prosecution",
-        "Trade Secret Protection",
+        "Design Registration Protection",
         "Civil Matters",
         "Criminal Matters",
         "Family Disputes"

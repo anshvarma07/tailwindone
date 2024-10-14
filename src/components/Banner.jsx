@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // Import icons
 import img2 from '../Assets/139.jpg';
 import img3 from '../Assets/140.jpg';
-// import img4 from '../Assets/141.jpg';
+import img4 from '../Assets/141.jpg';
 import img5 from '../Assets/142.jpg';
 
 const Banner = () => {
@@ -10,7 +10,7 @@ const Banner = () => {
   const slides = [
     { title: "Innovative Solutions", subtitle: "For Your Legal Needs", img: img2 },
     { title: "Expert Advocacy", subtitle: "Personalized Approach", img: img3 },
-    { title: "Protecting Your Rights", subtitle: "Securing Your Future", img: img2 },
+    { title: "Protecting Your Rights", subtitle: "Securing Your Future", img: img4 },
     { title: "Legal Excellence", subtitle: "Tailored to You", img: img5 },
   ];
 

@@ -69,10 +69,10 @@ const ServicesPage = () => {
             ]
         },
         {
-            category: "Trade Secret",
-            href:"tradesecret",items: [
-                { title: "Trade Secret Protection Strategies", description: "Developing customized strategies to protect your confidential business information from unauthorized use or disclosure." },
-                { title: "Trade Secret Litigation", description: "Expert legal representation in cases of trade secret theft, ensuring your business interests are fully protected." },
+            category: "Design Registration",
+            href:"Design%20Registration",items: [
+                { title: "Design Registration Protection Strategies", description: "Developing customized strategies to protect your confidential business information from unauthorized use or disclosure." },
+                { title: "Design Registration Litigation", description: "Expert legal representation in cases of Design Registration theft, ensuring your business interests are fully protected." },
             ]
         },
         {

@@ -57,10 +57,10 @@ const Plans = () => {
             lookup: "/services/Copyright", // Update to the correct hash
         },
         {
-            title: "Trade Secret",
+            title: "Design Registration",
             image: img4,
-            description: "Preserve your competitive edge with our trade secret protection strategies. We help you identify, secure, and enforce your confidential business information.",
-            lookup: "/services/TradeSecret", // Update to the correct hash
+            description: "Design registration service offers legal protection to the unique visual aspects of a product or its packaging, ensuring that the appearance, shape, configuration, pattern, or ornamentation of a design is safeguarded from unauthorized copying or imitation. This service helps businesses and individuals secure exclusive rights to their innovative designs, enhancing brand identity and market competitiveness. Through the design registration process, the originality and aesthetic value of a product are preserved, allowing owners to take legal action against infringements and build a strong, protected brand presence in the marketplace.",
+            lookup: "/services/Design%20Registration", // Update to the correct hash
         },
         {
             title: "Civil Matters",

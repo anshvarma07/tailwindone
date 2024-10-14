@@ -162,24 +162,27 @@ const servicesData = {
       },
     ],
   },
-  TradeSecret: {
-    description: `Trade secrets refer to confidential business information that provides a competitive edge. Protecting trade secrets is crucial for maintaining business integrity and value. Unlike 3, trade secrets are not disclosed to the public, allowing businesses to maintain their advantages without formal registration. Our firm focuses on creating and implementing effective strategies to safeguard your trade secrets against unauthorized use and disclosure. We assist in developing comprehensive confidentiality agreements, conducting audits to identify sensitive information, and providing employee training to ensure that everyone understands the importance of protecting trade secrets. By working with us, you can ensure that your proprietary information remains confidential and your competitive position is strengthened.`,
+  "Design Registration": {
+    description: `Design registration is the process of legally protecting the unique and aesthetic elements of a product's design, including its shape, configuration, patterns, and ornamentation. By registering a design, you obtain exclusive rights to prevent others from manufacturing, copying, or selling products with a similar design without your permission. This not only protects your creative efforts but also strengthens your brand’s identity and market presence.`,
     services: [
       {
-        name: 'Trade Secret Audits',
-        description2: `We conduct thorough audits to identify and evaluate your trade secrets, ensuring that all sensitive information is properly protected. Our audits help you understand where vulnerabilities may exist and recommend strategies for enhancement.`,
+        name: 'Preparation of Design / Line Diagram:',
+        description2: `Develop a detailed and accurate line drawing or graphic representation of the design.
+Ensure the design includes key features like shape, configuration, patterns, or ornamentation that distinguish it from existing designs.
+Prepare multiple views (front, back, side, top) of the design, if necessary, to fully represent its appearance.`,
       },
       {
-        name: 'Confidentiality Agreements',
-        description2: `Our team drafts and negotiates confidentiality agreements tailored to your business needs. These agreements are essential for protecting your trade secrets when sharing information with employees, partners, or third parties.`,
+        name: 'Design Registration:',
+        description2: `File an application for design registration with the relevant intellectual property (IP) office.
+Include the prepared line diagrams, a description of the design’s unique features, and other required details (e.g., the class of goods the design applies to).
+Pay the required registration fees.
+Await examination by the IP office to determine if the design meets the criteria for registration, including originality and distinctiveness.
+Upon approval, obtain the certificate of registration, granting exclusive rights to the design.`,
       },
       {
-        name: 'Employee Training on Trade Secret Protection',
-        description2: `We provide training sessions for employees to raise awareness about the importance of trade secret protection. These sessions cover best practices for handling confidential information and the legal implications of unauthorized disclosure.`,
-      },
-      {
-        name: 'Legal Action for Misappropriation',
-        description2: `If your trade secrets are misappropriated, we help you take decisive legal action against the infringer. Our team prepares and files lawsuits to protect your interests and seek damages for any harm caused.`,
+        name: 'Prosecution:',
+        description2: `Response to Examination Report: In case of objections or queries raised by the IP office, submit a formal response addressing all issues to support the registration.
+Amendments and Clarifications: If required, make necessary amendments to the application or provide additional documentation to clarify the scope and originality of the design.`,
       },
     ],
   },
