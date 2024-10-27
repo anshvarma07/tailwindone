@@ -44,7 +44,7 @@ const Banner = () => {
         >
           <div className="flex flex-col md:flex-row h-full">
             <div className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center p-6 md:p-12 text-center md:text-left">
-              <h2 className="text-[gold] text-xl md:text-2xl lg:text-5xl font-bold  mb-2 md:mb-4">
+              <h2 className="text-[#FBC9BB] text-xl md:text-2xl lg:text-5xl font-bold  mb-2 md:mb-4">
                 {slide.title}
               </h2>
               <p className="text-white text-xl md:text-2xl lg:text-4xl font-semibold mb-4 md:mb-8">

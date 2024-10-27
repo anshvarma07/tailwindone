@@ -134,7 +134,7 @@ const ServicesPage = () => {
                                     <ul className="space-y-2 md:space-y-4">
                                         {category.items.map((item, itemIndex) => (
                                             <li key={itemIndex} className="bg-[#1d4b45] rounded-lg p-3 md:p-6 transition-all duration-300 hover:bg-[#163b36] hover:shadow-lg">
-                                                <h3 className="font-bold text-lg md:text-xl mb-2 md:mb-3 text-[gold]" id="trademark">{item.title}</h3>
+                                                <h3 className="font-bold text-lg md:text-xl mb-2 md:mb-3 text-[#FBC9BB]" id="trademark">{item.title}</h3>
                                                 <p className="text-sm md:text-base text-gray-200 leading-relaxed">{item.description}</p>
                                             </li>
                                         ))}

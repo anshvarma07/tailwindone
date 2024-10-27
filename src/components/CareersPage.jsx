@@ -50,7 +50,7 @@ const CareersPage = () => {
       <div className="relative bg-[#235951] text-white">
         <div className="absolute inset-0 opacity-20 bg-cover bg-center" />
         <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[gold]">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#FBC9BB]">
             Join SS Advocates
           </h1>
           <p className="text-xl md:text-2xl max-w-2xl">

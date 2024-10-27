@@ -282,7 +282,7 @@ const Services = () => {
     <div className="min-h-screen bg-[#3F6D66] text-white p-6">
       <div className="max-w-8xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight text-[#FFD700] mb-4 tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight text-[#FBC9BB] mb-4 tracking-tight">
             SS Advocates
           </h1>
           <p className="text-lg md:text-xl font-light text-gray-200 max-w-3xl mx-auto">
@@ -310,7 +310,7 @@ const Services = () => {
 
         {selectedService && (
           <div className="mt-8 p-8 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl shadow-xl transition-all duration-300 ease-in-out">
-            <h2 className="text-3xl font-bold mb-4 text-[#FFD700]">{selectedService}</h2>
+            <h2 className="text-3xl font-bold mb-4 text-[#FBC9BB] text-[#FFD700]">{selectedService}</h2>
             <p className="mb-6 text-gray-200 text-lg">{servicesData[selectedService].description}</p>
             <h3 className="text-2xl font-semibold mb-4 text-[#FFD700]">Services Offered:</h3>
             <ul className="space-y-4">
