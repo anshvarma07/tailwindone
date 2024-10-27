@@ -14,8 +14,9 @@ export default function Home() {
             {/* <Floating></Floating> */}
             <Banner />
             <Experts />
-            <Newsletter />
             <Plans />
+            <Newsletter />
+            
             <Footer></Footer>
 
 

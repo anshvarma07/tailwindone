@@ -17,19 +17,19 @@ const FloatingSocialButtons = () => {
     {
       name: 'Phone',
       icon: <Phone size={20} />,
-      link: 'tel:+1234567890',
+      link: 'tel:9266532527',
       color: 'bg-green-500'
     },
     {
       name: 'WhatsApp',
       icon: <MessageCircle size={20} />,
-      link: 'https://wa.me/1234567890',
+      link: 'https://wa.me/9266532527',
       color: 'bg-green-400'
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin size={20} />,
-      link: 'https://linkedin.com/company/yourcompany',
+      link: 'https://www.linkedin.com/company/104797903/admin/page-posts/published/',
       color: 'bg-blue-600'
     },
     {
@@ -41,13 +41,13 @@ const FloatingSocialButtons = () => {
     {
       name: 'Instagram',
       icon: <Instagram size={20} />,
-      link: 'https://instagram.com/yourcompany',
+      link: 'https://www.instagram.com/ss_advocates/?hl=en',
       color: 'bg-pink-500'
     },
     {
       name: 'Facebook',
       icon: <Facebook size={20} />,
-      link: 'https://facebook.com/yourcompany',
+      link: 'https://www.facebook.com/profile.php?id=61567458087215',
       color: 'bg-blue-500'
     }
   ];
