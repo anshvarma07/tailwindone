@@ -10,7 +10,9 @@ function Header() {
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services/Patents' },
     { name: 'About', path: '/about' },
-    { name: 'Contact', path: '#footer', isScroll: true }
+    { name: 'Career', path: '/career'},
+    { name: 'Contact', path: '#footer', isScroll: true },
+    
   ];
 
   const handleContactClick = (e) => {

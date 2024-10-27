@@ -8,16 +8,16 @@ export default function Experts() {
                 <h1 className="text-[gold] font-bold  text-2xl md:text-3xl">
                     A leading full service intellectual property law firm.
                 </h1>
-                <p className="my-1 md:text-base text-[13px]">
-                    S.S. Advocates is a trusted law firm providing comprehensive Intellectual Property (IP) solutions, including patent drafting, filing, prosecution, and trademark registration. Our services span knock-out patentability searches, infringement assessments, patent monitoring, trademark renewals, IP valuation, and more. We handle national and international filings, ensuring robust protection for your intellectual assets. In addition to IP, we offer expert legal counsel in civil, criminal, and family matters. With a focus on balancing legal pragmatism and commercial realities, S.S. Advocates delivers reliable, professional legal services tailored to each client’s needs.
+                <p className="my-1 md:text-base text-[13px] text-white">
+                    SS Advocates is a trusted law firm providing comprehensive Intellectual Property (IP) solutions, including patent drafting, filing, prosecution, and trademark registration. 
                 </p>
-                <button
+                {/* <button
                     type="button"
                     className="p-1 my-1 rounded-md bg-black text-white w-40 font-bold hover:bg-black/80"
                     onClick={() => document.getElementById('services').scrollIntoView({ behavior: 'smooth' })}
                 >
                     Get Started
-                </button>
+                </button> */}
             </div>
             <div className="col-span-1 flex items-center justify-center">
                 <img className="h-[50vh] max-w-full object-contain rounded-[400px]" src={img1} alt="" />

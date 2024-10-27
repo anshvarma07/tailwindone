@@ -283,7 +283,7 @@ const Services = () => {
       <div className="max-w-8xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-7xl font-extrabold leading-tight text-[#FFD700] mb-4 tracking-tight">
-            S.S. Advocates
+            SS Advocates
           </h1>
           <p className="text-lg md:text-xl font-light text-gray-200 max-w-3xl mx-auto">
             Empowering innovation and protecting your intellectual property with expert legal services tailored to your unique needs.
