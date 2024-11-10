@@ -59,6 +59,8 @@ const CareersPage = () => {
           </p>
         </div>
       </div>
+       {/* Current Openings Section */}
+       <CurrentOpenings />
 
       {/* Why Join Us Section */}
       <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
@@ -88,8 +90,7 @@ const CareersPage = () => {
         </div>
       </div>
 
-      {/* Current Openings Section */}
-      <CurrentOpenings />
+     
 
       
 
