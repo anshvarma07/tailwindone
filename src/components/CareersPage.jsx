@@ -9,6 +9,7 @@ import {
   Coffee,
   Heart
 } from 'lucide-react';
+import CurrentOpenings from './CurrentOpenings';
 
 const CareersPage = () => {
   const benefits = [
@@ -88,27 +89,7 @@ const CareersPage = () => {
       </div>
 
       {/* Current Openings Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-          Current Openings
-        </h2>
-        
-        <div className="bg-white rounded-xl shadow-lg p-8 text-center max-w-2xl mx-auto">
-          <div className="mb-6">
-            <Building2 className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-              No Current Openings
-            </h3>
-            <p className="text-gray-600 mb-6">
-              While we don't have any positions available right now, we're always interested in connecting with talented legal professionals. Send us your resume at info@ssadvocates.co.in for future opportunities.
-            </p>
-          </div>
-          
-          {/* <button className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300">
-            Submit Your Resume
-          </button> */}
-        </div>
-      </div>
+      <CurrentOpenings />
 
       
 
