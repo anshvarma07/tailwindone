@@ -62,7 +62,7 @@ const CurrentOpenings = () => {
             
             <div className="mt-8">
               <h4 className="text-lg font-semibold mb-4">Apply Now!</h4>
-              <div className="flex flex-col space-y-2">
+              <div className="flex flex-col space-y-4">
                 <div className="flex items-center space-x-2 text-gray-600">
                   <Mail className="w-5 h-5" />
                   <span>info@ssadvocates.co.in</span>
@@ -71,6 +71,14 @@ const CurrentOpenings = () => {
                   <Phone className="w-5 h-5" />
                   <span>+91 9266532527</span>
                 </div>
+                <a 
+                  href="https://forms.gle/dCc4ZkizHfEAvmK49" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300 w-full sm:w-auto"
+                >
+                  Apply Now!
+                </a>
               </div>
             </div>
           </div>
