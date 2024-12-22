@@ -100,7 +100,7 @@ const CareersPage = () => {
           Questions About Working With Us?
         </h2>
         <p className="text-xl text-gray-600 mb-8">
-          Contact our HR team at info@ssadvocates.co.in
+          Contact our team at info@ssadvocates.co.in
         </p>
         <Award className="w-12 h-12 text-blue-600 mx-auto" />
       </div>
