@@ -7,6 +7,11 @@ const servicesData = {
     description: `Patents are essential for protecting inventions and providing exclusive rights to inventors. The patent system encourages innovation by granting inventors a limited period during which they can exploit their inventions without competition. At our firm, we understand the complexities involved in navigating patent laws and processes. Our experienced team works diligently to ensure that your intellectual property is well protected. We offer a comprehensive range of patent services, including thorough searches, meticulous drafting, strategic filing, and diligent prosecution. Our tailored services are designed to meet the unique needs of individual inventors, startups, and large corporations, ensuring that your innovations are safeguarded and that you can focus on what you do best—creating and innovating.`,
     services: [
       {
+        name: 'Patent Innovation Incubation Service',
+        description2: `Patent incubation services are designed to help inventors, entrepreneurs, and businesses develop, protect, and commercialize their intellectual property (IP). 
+Below is an overview of the key components typically included in patent incubation services: Brainstorming and Refinement, Market Research, Prototype Creation,  Legal and Regulatory Support,  Commercialization Support.`,
+      },
+      {
         name: 'Knock out Patentability Search',
         description2: `This service involves a preliminary search to assess the likelihood of obtaining a patent for your invention. We conduct extensive searches of existing patents and published applications to determine if your idea is novel and non-obvious, providing you with a clear understanding of your patent prospects.`,
       },

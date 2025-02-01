@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 // Your image imports
+import img0 from "../Assets/150.png";
 import img1 from "../Assets/200.png";
 import img2 from "../Assets/201.jpg";
 import img3 from "../Assets/202.jpeg";
@@ -39,10 +40,16 @@ const Plans = () => {
 
     const services = [
         {
+            title: "Patent Innovation Incubation Service",
+            image: img0,
+            description: "Patent incubation services are designed to help inventors, entrepreneurs, and businesses develop, protect, and commercialize their intellectual property (IP).",
+            lookup: "/services/Patents", 
+        },
+        {
             title: "Patent Services",
             image: img1,
             description: "Protect your inventions and innovations with our comprehensive patent services. We guide you through the entire process, from patent search to filing and prosecution.",
-            lookup: "/services/Patents", // Update to the correct hash
+            lookup: "/services/Patents",
         },
         {
             title: "Trademark Services",
