@@ -69,7 +69,7 @@ const CurrentOpenings = () => {
                 </div>
                 <div className="flex items-center space-x-2 text-gray-600">
                   <Phone className="w-5 h-5" />
-                  <span>+91 9266532527</span>
+                  <span>+91 9873515040</span>
                 </div>
                 <a 
                   href="" // href="https://forms.gle/dCc4ZkizHfEAvmK49" 

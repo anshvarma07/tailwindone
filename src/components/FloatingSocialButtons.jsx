@@ -17,13 +17,13 @@ const FloatingSocialButtons = () => {
     {
       name: 'Phone',
       icon: <Phone size={20} />,
-      link: 'tel:9266532527',
+      link: 'tel:9873515040',
       color: 'bg-green-500'
     },
     {
       name: 'WhatsApp',
       icon: <MessageCircle size={20} />,
-      link: 'https://wa.me/9266532527',
+      link: 'https://wa.me/9873515040',
       color: 'bg-green-400'
     },
     {
