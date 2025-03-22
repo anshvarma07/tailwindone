@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Law Office of SS Advocates</h3>
             <p className="mb-2">Office Space No.309, Third floor, Plot No.9, Sector - 4, Vikash Surya Galaxy Dwarka New Delhi-110078</p>
-            <p className="mb-2">+91 9873515040</p>
+            <p className="mb-2">+91 9266532527</p>
             <p>info@ssadvocates.co.in</p>
           </div>
           
