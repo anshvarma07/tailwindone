@@ -6,9 +6,11 @@ import Services from "./Pages/Services";
 import Aboutus from "./Pages/Aboutus";
 import Career from "./Pages/Career";
 import FloatingSocialButtons from "./components/FloatingSocialButtons";
+import Disclaimer from "./components/Disclaimer";
 
 function App() {
   return <div className="App bg-[#3F6D66]">
+    <Disclaimer />
     <FloatingSocialButtons/>
       <BrowserRouter>
       <Routes>
