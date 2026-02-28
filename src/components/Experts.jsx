@@ -12,11 +12,11 @@ export default function Experts() {
                     SS Advocates is a trusted law firm providing comprehensive Intellectual Property (IP) solutions, including patent drafting, filing, prosecution, and trademark registration. 
                 </p>
                 <p className="my-1 md:text-base text-[13px] text-white">
-                    We advise Fortune 500 corporations, global technology leaders, and high-growth enterprises on the strategic protection and enforcement of intellectual property assets worldwide. Our team of experienced patent and trademark attorneys, commercial lawyers, and IP litigators delivers precise, commercially driven solutions that safeguard innovation and competitive advantage.
+                    We are engaged with multiple clients from several justifications and represent them globally in complex infringement actions, writs, special leave petitions, and revocation proceedings before courts across India, including the Supreme Court, as well as specialist tribunals and regulatory authorities. Our practice also extends to comprehensive border enforcement strategies, including Customs Watch Notices, ensuring decisive protection against infringing goods.
                 </p>
-                <p className="my-1 md:text-base text-[13px] text-white">
-                    We represent clients in complex infringement actions, writs, special leave petitions, and revocation proceedings before courts across India, including the Supreme Court, as well as specialist tribunals and regulatory authorities. Our practice also extends to comprehensive border enforcement strategies, including Customs Watch Notices, ensuring decisive protection against infringing goods.
-                </p>
+                {/* <p className="my-1 md:text-base text-[13px] text-white">
+                    
+                </p> */}
                 {/* <button
                     type="button"
                     className="p-1 my-1 rounded-md bg-black text-white w-40 font-bold hover:bg-black/80"
