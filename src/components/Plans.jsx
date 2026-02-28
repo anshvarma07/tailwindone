@@ -8,8 +8,6 @@ import img2 from "../Assets/201.jpg";
 import img3 from "../Assets/202.jpeg";
 import img4 from "../Assets/203.jpg";
 import img5 from "../Assets/204.jpg";
-import img6 from "../Assets/205.jpg";
-import img7 from "../Assets/206.webp";
 
 const ServiceCard = ({ title, image, description, lookup, onNavigate }) => (
     <div className="shadow-2xl hover:scale-105 bg-white transition-transform duration-300 rounded-xl text-center p-6">
@@ -74,18 +72,6 @@ const Plans = () => {
             image: img5,
             description: "Navigate complex civil litigation with our experienced team. We represent clients in various disputes, including contract, property, and tort cases.",
             lookup: "/services/Civil%20Matters", // Update to the correct hash
-        },
-        {
-            title: "Criminal Matters",
-            image: img6,
-            description: "Defend your rights with our skilled criminal defense attorneys. We provide robust representation in all types of criminal cases, from misdemeanors to felonies.",
-            lookup: "/services/Criminal%20Matters", // Update to the correct hash
-        },
-        {
-            title: "Family Disputes",
-            image: img7,
-            description: "Find resolution in family matters with our compassionate approach. We handle divorce, child custody, alimony, and other family law issues with sensitivity and expertise.",
-            lookup: "/services/Family%20Disputes", // Update to the correct hash
         }
     ];
 

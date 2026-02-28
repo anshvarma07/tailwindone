@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
+import Statistics from './Statistics';
 // import { servicesData } from './servicesData'; // Assume this file exists with your services data
 
 const servicesData = {
@@ -216,52 +217,6 @@ Amendments and Clarifications: If required, make necessary amendments to the app
       },
     ],
   },
-  "Criminal Matters": {
-    description: `Criminal matters pertain to offenses against the state or public, resulting in prosecution by government authorities. Our firm provides robust legal representation for individuals facing criminal charges, focusing on protecting your rights and ensuring a fair trial. With a deep understanding of criminal law and a commitment to advocacy, our experienced attorneys work diligently to build strong defenses tailored to the specifics of each case. Whether you are facing minor charges or serious felonies, we are dedicated to providing you with the highest level of legal support. Our goal is to navigate the complexities of the criminal justice system on your behalf, striving to achieve the best possible outcomes for our clients.`,
-    services: [
-      {
-        name: 'Defense against Criminal Charges',
-        description2: `Our firm provides strong legal defense against a wide range of criminal charges, including misdemeanors and felonies. We analyze evidence, challenge prosecution arguments, and work to achieve favorable outcomes for our clients.`,
-      },
-      {
-        name: 'Bail Applications',
-        description2: `We assist clients in filing bail applications to secure their release while awaiting trial. Our team presents compelling arguments to the court, advocating for fair bail conditions based on individual circumstances.`,
-      },
-      {
-        name: 'Appeals in Criminal Cases',
-        description2: `If you have been convicted of a crime, we offer legal support in pursuing appeals. Our team reviews trial records, identifies grounds for appeal, and represents clients in appellate court proceedings.`,
-      },
-      {
-        name: 'Legal Advice on Criminal Law',
-        description2: `We provide clients with comprehensive legal advice on criminal law matters, helping them understand their rights, potential consequences, and available options. Our guidance empowers clients to make informed decisions throughout their cases.`,
-      },
-    ],
-  },
-  "Family Disputes": {
-    description: `Family disputes often involve sensitive legal matters such as divorce, child custody, and inheritance. Our compassionate legal team is dedicated to helping clients navigate these challenges, providing guidance and representation to achieve the best possible outcomes for families. We understand the emotional complexities involved in family law matters and strive to create a supportive environment for our clients. Our experienced attorneys work closely with clients to develop personalized legal strategies that reflect their goals and protect their interests. Whether through negotiation or litigation, we are committed to advocating for our clients’ rights and ensuring that their family matters are resolved as smoothly as possible.`,
-    services: [
-      {
-        name: 'Divorce Proceedings',
-        description2: `We guide clients through the divorce process, ensuring that their rights are protected during negotiations and court proceedings. Our team handles all aspects of divorce, including asset division, spousal support, and more.`,
-      },
-      {
-        name: 'Child Custody Agreements',
-        description2: `Our firm assists clients in negotiating and establishing child custody agreements that serve the best interests of the child. We work to create fair arrangements that consider the needs of all parties involved.`,
-      },
-      {
-        name: 'Child Support Arrangements',
-        description2: `We provide legal guidance in establishing child support arrangements that are fair and reasonable. Our team helps clients navigate the complexities of child support laws to ensure that the financial needs of the child are met.`,
-      },
-      {
-        name: 'Mediation in Family Matters',
-        description2: `We offer mediation services for family disputes, providing a neutral space for open dialogue. Our experienced mediators help families reach amicable solutions without the stress and expense of litigation.`,
-      },
-      {
-        name: 'Adoption Services',
-        description2: `We assist clients throughout the adoption process, guiding them through legal requirements and ensuring a smooth transition for families. Our team is dedicated to making the adoption process as positive and seamless as possible.`,
-      },
-    ],
-  },
 };
 
 
@@ -284,7 +239,7 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#3F6D66] text-white p-6">
+    <div className="min-h-screen bg-gradient-to-b from-[#235951] to-[#3F6D66] text-white p-6">
       <div className="max-w-8xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-7xl font-extrabold leading-tight text-[#FBC9BB] mb-4 tracking-tight">
@@ -294,6 +249,8 @@ const Services = () => {
             Empowering innovation and protecting your intellectual property with expert legal services tailored to your unique needs.
           </p>
         </div>
+
+        <Statistics />
 
         <nav className="bg-[#2a5751] rounded-2xl mb-12 shadow-lg">
           <ul className="flex flex-wrap justify-around p-2">
