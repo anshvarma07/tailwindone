@@ -9,10 +9,10 @@ function Header() {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services/Patents' },
+    { name: 'News', path: '/news' },
     { name: 'About', path: '/about' },
     { name: 'Career', path: '/career'},
     { name: 'Contact', path: '#footer', isScroll: true },
-    
   ];
 
   const handleContactClick = (e) => {

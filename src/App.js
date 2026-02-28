@@ -7,6 +7,7 @@ import Aboutus from "./Pages/Aboutus";
 import Career from "./Pages/Career";
 import FloatingSocialButtons from "./components/FloatingSocialButtons";
 import Disclaimer from "./components/Disclaimer";
+import News from "./Pages/News";
 
 function App() {
   return <div className="App bg-[#3F6D66]">
@@ -18,6 +19,7 @@ function App() {
         <Route path="/services/:serviceName" element={<Services />} />
         <Route path="/about" element={<Aboutus />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/news" element={<News />} />
       </Routes>
     </BrowserRouter>
   </div>;
